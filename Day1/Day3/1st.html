@@ -7,7 +7,13 @@
 </head>
 <body>
     <script>
-        
+        function foo(){
+            console.log("立即执行函数");
+        }
+        foo()
+        (function foo(){
+            console.log("立即执行函数");
+        })()
     </script>
 </body>
 </html>
